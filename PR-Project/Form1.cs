@@ -101,21 +101,25 @@ namespace PR_Project
         private void btn_dtAbsensi_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Color.FromArgb(255, 18, 140, 126));
+            OpenChildForm(new DataAbsensi());
         }
 
         private void btn_laporan_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Color.FromArgb(255, 18, 140, 126));
+            OpenChildForm(new Laporan());
         }
 
         private void btn_dtKaryawan_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Color.FromArgb(255, 18, 140, 126));
+            OpenChildForm(new DataKaryawan());
         }
 
         private void btn_setelan_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Color.FromArgb(255, 18, 140, 126));
+            OpenChildForm(new Setting());
         }
         #endregion 
     }

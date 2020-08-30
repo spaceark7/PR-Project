@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace PR_Project.Forms
 {
-    public partial class OverviewForm : Form
+    public partial class Setting : Form
     {
-        public OverviewForm()
+        public Setting()
         {
             InitializeComponent();
         }
-
-       
     }
 }
