@@ -29,6 +29,11 @@ namespace PR_Project
 
         }
 
+        private void ConnectMachine()
+        {
+
+        } 
+
         private void OpenChildForm(Form ChildForm)
         {
             if(currentChildForm != null)
@@ -57,14 +62,14 @@ namespace PR_Project
             if(senderBtn != null) {
                 DeactivatedButton();
             currentButton = (IconButton)senderBtn;
-            currentButton.BackColor = Color.FromArgb(255, 18, 140, 126);
+                currentButton.BackColor = Color.FromArgb(255, 66, 103, 178);
             currentButton.ForeColor = Color.White;
             currentButton.TextAlign = ContentAlignment.MiddleCenter;
             currentButton.IconColor = Color.White;
             currentButton.TextImageRelation = TextImageRelation.TextBeforeImage;
 
             //leftborderbutton
-            leftBorderPanel.BackColor = Color.Cornsilk;
+            leftBorderPanel.BackColor = Color.DodgerBlue;
             leftBorderPanel.Location = new Point(0, currentButton.Location.Y);
             leftBorderPanel.Visible = true;
             leftBorderPanel.BringToFront();
@@ -80,10 +85,10 @@ namespace PR_Project
         {
             if (currentButton != null)
             {
-                currentButton.BackColor = Color.FromArgb(255, 7, 94, 84);
-                currentButton.ForeColor = Color.White;
+                currentButton.BackColor = Color.White;
+                currentButton.ForeColor = Color.FromArgb(225,66, 103, 178);
                 currentButton.TextAlign = ContentAlignment.MiddleLeft;
-                currentButton.IconColor = Color.White;
+                currentButton.IconColor = Color.FromArgb(255, 66, 103, 178);
                 currentButton.TextImageRelation = TextImageRelation.ImageBeforeText;
                 currentButton.ImageAlign = ContentAlignment.MiddleLeft;
 
@@ -121,6 +126,8 @@ namespace PR_Project
             ActivateButton(sender, Color.FromArgb(255, 18, 140, 126));
             OpenChildForm(new Setting());
         }
-        #endregion 
+        #endregion
+
+       
     }
 }

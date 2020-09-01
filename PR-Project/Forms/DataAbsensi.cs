@@ -15,6 +15,12 @@ namespace PR_Project.Forms
         public DataAbsensi()
         {
             InitializeComponent();
+
+        }
+
+        private void DataAbsensi_Load(object sender, EventArgs e)
+        {
+           
         }
     }
 }

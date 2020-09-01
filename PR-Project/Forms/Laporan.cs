@@ -16,5 +16,12 @@ namespace PR_Project.Forms
         {
             InitializeComponent();
         }
+
+        private void Laporan_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'salarySumDataSet.SalarySum' table. You can move, or remove it, as needed.
+            this.salarySumTableAdapter.Fill(this.salarySumDataSet.SalarySum);
+
+        }
     }
 }

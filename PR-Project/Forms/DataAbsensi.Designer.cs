@@ -28,36 +28,384 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DataAbsensi));
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.printDialog1 = new System.Windows.Forms.PrintDialog();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.btnPrint = new FontAwesome.Sharp.IconButton();
+            this.panelSearchMonth = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btn_Search = new FontAwesome.Sharp.IconButton();
+            this.dtp_toDate = new System.Windows.Forms.DateTimePicker();
+            this.dtp_fromDate = new System.Windows.Forms.DateTimePicker();
+            this.lblToDate = new System.Windows.Forms.Label();
+            this.lblFromText = new System.Windows.Forms.Label();
+            this.labelTextPeriod = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panelSearchMonth.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // panel1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(40, 174);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(727, 55);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Masih DIbikin Kakak, Sabar Ya :)";
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.AutoScroll = true;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(103)))), ((int)(((byte)(178)))));
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Location = new System.Drawing.Point(12, 110);
+            this.panel1.MinimumSize = new System.Drawing.Size(0, 450);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(862, 480);
+            this.panel1.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.dataGridView1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(862, 456);
+            this.panel2.TabIndex = 0;
+            // 
+            // dataGridView1
+            // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DarkGreen;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(103)))), ((int)(((byte)(178)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Corbel", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Azure;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7,
+            this.Column8,
+            this.Column9,
+            this.Column10,
+            this.Column11,
+            this.Column12});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Snow;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Corbel", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.EnableHeadersVisualStyles = false;
+            this.dataGridView1.GridColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.DarkGreen;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridView1.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.ForestGreen;
+            this.dataGridView1.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
+            this.dataGridView1.RowTemplate.DividerHeight = 2;
+            this.dataGridView1.RowTemplate.Height = 30;
+            this.dataGridView1.Size = new System.Drawing.Size(862, 456);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // Column1
+            // 
+            this.Column1.Frozen = true;
+            this.Column1.HeaderText = "Id";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 50;
+            // 
+            // Column2
+            // 
+            this.Column2.Frozen = true;
+            this.Column2.HeaderText = "Nama Karyawan";
+            this.Column2.MinimumWidth = 150;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 150;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Tanggal";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "tanggal";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "tanggal";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "tanggal";
+            this.Column6.Name = "Column6";
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "tanggal";
+            this.Column7.Name = "Column7";
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "tgl";
+            this.Column8.Name = "Column8";
+            // 
+            // Column9
+            // 
+            this.Column9.HeaderText = "tgl";
+            this.Column9.Name = "Column9";
+            // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "tgl";
+            this.Column10.Name = "Column10";
+            // 
+            // Column11
+            // 
+            this.Column11.HeaderText = "tgl";
+            this.Column11.Name = "Column11";
+            // 
+            // Column12
+            // 
+            this.Column12.HeaderText = "tgl";
+            this.Column12.Name = "Column12";
+            // 
+            // printDialog1
+            // 
+            this.printDialog1.UseEXDialog = true;
+            // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
+            // 
+            // btnPrint
+            // 
+            this.btnPrint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPrint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(70)))), ((int)(((byte)(130)))));
+            this.btnPrint.FlatAppearance.BorderSize = 0;
+            this.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrint.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnPrint.Font = new System.Drawing.Font("Corbel", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrint.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnPrint.IconChar = FontAwesome.Sharp.IconChar.Print;
+            this.btnPrint.IconColor = System.Drawing.Color.White;
+            this.btnPrint.IconSize = 25;
+            this.btnPrint.Location = new System.Drawing.Point(710, 42);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Rotation = 0D;
+            this.btnPrint.Size = new System.Drawing.Size(148, 50);
+            this.btnPrint.TabIndex = 1;
+            this.btnPrint.Text = "Cetak Rekapan";
+            this.btnPrint.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPrint.UseVisualStyleBackColor = false;
+            // 
+            // panelSearchMonth
+            // 
+            this.panelSearchMonth.Controls.Add(this.panel4);
+            this.panelSearchMonth.Controls.Add(this.dtp_toDate);
+            this.panelSearchMonth.Controls.Add(this.dtp_fromDate);
+            this.panelSearchMonth.Controls.Add(this.lblToDate);
+            this.panelSearchMonth.Controls.Add(this.lblFromText);
+            this.panelSearchMonth.Controls.Add(this.labelTextPeriod);
+            this.panelSearchMonth.Location = new System.Drawing.Point(12, 4);
+            this.panelSearchMonth.Name = "panelSearchMonth";
+            this.panelSearchMonth.Size = new System.Drawing.Size(435, 100);
+            this.panelSearchMonth.TabIndex = 2;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.btn_Search);
+            this.panel4.Location = new System.Drawing.Point(350, 40);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(77, 54);
+            this.panel4.TabIndex = 5;
+            // 
+            // btn_Search
+            // 
+            this.btn_Search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(70)))), ((int)(((byte)(130)))));
+            this.btn_Search.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_Search.FlatAppearance.BorderSize = 0;
+            this.btn_Search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Search.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btn_Search.Font = new System.Drawing.Font("Corbel", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Search.ForeColor = System.Drawing.Color.White;
+            this.btn_Search.IconChar = FontAwesome.Sharp.IconChar.Search;
+            this.btn_Search.IconColor = System.Drawing.Color.White;
+            this.btn_Search.IconSize = 25;
+            this.btn_Search.Location = new System.Drawing.Point(0, 0);
+            this.btn_Search.Name = "btn_Search";
+            this.btn_Search.Rotation = 0D;
+            this.btn_Search.Size = new System.Drawing.Size(77, 54);
+            this.btn_Search.TabIndex = 0;
+            this.btn_Search.Text = "Cari";
+            this.btn_Search.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_Search.UseVisualStyleBackColor = false;
+            // 
+            // dtp_toDate
+            // 
+            this.dtp_toDate.CalendarFont = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtp_toDate.CalendarForeColor = System.Drawing.Color.Transparent;
+            this.dtp_toDate.CalendarMonthBackground = System.Drawing.Color.Transparent;
+            this.dtp_toDate.CalendarTitleBackColor = System.Drawing.Color.Transparent;
+            this.dtp_toDate.CalendarTitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
+            this.dtp_toDate.CalendarTrailingForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.dtp_toDate.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtp_toDate.Location = new System.Drawing.Point(176, 68);
+            this.dtp_toDate.Name = "dtp_toDate";
+            this.dtp_toDate.Size = new System.Drawing.Size(162, 27);
+            this.dtp_toDate.TabIndex = 4;
+            // 
+            // dtp_fromDate
+            // 
+            this.dtp_fromDate.CalendarFont = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtp_fromDate.CalendarForeColor = System.Drawing.Color.Transparent;
+            this.dtp_fromDate.CalendarMonthBackground = System.Drawing.Color.Transparent;
+            this.dtp_fromDate.CalendarTitleBackColor = System.Drawing.Color.Transparent;
+            this.dtp_fromDate.CalendarTitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
+            this.dtp_fromDate.CalendarTrailingForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.dtp_fromDate.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtp_fromDate.Location = new System.Drawing.Point(8, 68);
+            this.dtp_fromDate.Name = "dtp_fromDate";
+            this.dtp_fromDate.Size = new System.Drawing.Size(162, 27);
+            this.dtp_fromDate.TabIndex = 3;
+            // 
+            // lblToDate
+            // 
+            this.lblToDate.AutoSize = true;
+            this.lblToDate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblToDate.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblToDate.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblToDate.Location = new System.Drawing.Point(172, 46);
+            this.lblToDate.Name = "lblToDate";
+            this.lblToDate.Size = new System.Drawing.Size(116, 19);
+            this.lblToDate.TabIndex = 2;
+            this.lblToDate.Text = "Sampai Tanggal";
+            // 
+            // lblFromText
+            // 
+            this.lblFromText.AutoSize = true;
+            this.lblFromText.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFromText.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblFromText.Location = new System.Drawing.Point(4, 46);
+            this.lblFromText.Name = "lblFromText";
+            this.lblFromText.Size = new System.Drawing.Size(93, 19);
+            this.lblFromText.TabIndex = 1;
+            this.lblFromText.Text = "Dari Tanggal";
+            // 
+            // labelTextPeriod
+            // 
+            this.labelTextPeriod.AutoSize = true;
+            this.labelTextPeriod.Font = new System.Drawing.Font("Corbel", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTextPeriod.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelTextPeriod.Location = new System.Drawing.Point(110, 5);
+            this.labelTextPeriod.Name = "labelTextPeriod";
+            this.labelTextPeriod.Size = new System.Drawing.Size(129, 27);
+            this.labelTextPeriod.TabIndex = 0;
+            this.labelTextPeriod.Text = "Pilih Periode";
             // 
             // DataAbsensi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(103)))), ((int)(((byte)(178)))));
+            this.ClientSize = new System.Drawing.Size(870, 660);
+            this.Controls.Add(this.panelSearchMonth);
+            this.Controls.Add(this.btnPrint);
+            this.Controls.Add(this.panel1);
             this.Name = "DataAbsensi";
             this.Text = "DataAbsensi";
+            this.Load += new System.EventHandler(this.DataAbsensi_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panelSearchMonth.ResumeLayout(false);
+            this.panelSearchMonth.PerformLayout();
+            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
+        private System.Windows.Forms.PrintDialog printDialog1;
+        private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private FontAwesome.Sharp.IconButton btnPrint;
+        private System.Windows.Forms.Panel panelSearchMonth;
+        private System.Windows.Forms.DateTimePicker dtp_fromDate;
+        private System.Windows.Forms.Label lblToDate;
+        private System.Windows.Forms.Label lblFromText;
+        private System.Windows.Forms.Label labelTextPeriod;
+        private System.Windows.Forms.Panel panel4;
+        private FontAwesome.Sharp.IconButton btn_Search;
+        private System.Windows.Forms.DateTimePicker dtp_toDate;
     }
 }
