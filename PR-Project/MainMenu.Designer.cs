@@ -2,7 +2,7 @@
 
 namespace PR_Project
 {
-    partial class Form1
+    partial class MainMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -48,10 +48,10 @@ namespace PR_Project
             this.panelChildShadow = new System.Windows.Forms.Panel();
             this.panelChildFormContainer = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pictbox_AlertIcon = new FontAwesome.Sharp.IconPictureBox();
             this.btn_connect = new FontAwesome.Sharp.IconButton();
+            this.lbl_statusText = new System.Windows.Forms.Label();
+            this.lbl_tellmenu = new System.Windows.Forms.Label();
+            this.pictbox_AlertIcon = new FontAwesome.Sharp.IconPictureBox();
             this.panelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconStatusPanel)).BeginInit();
@@ -128,9 +128,10 @@ namespace PR_Project
             this.lblTextStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblTextStatus.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTextStatus.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblTextStatus.Location = new System.Drawing.Point(44, 76);
+            this.lblTextStatus.Location = new System.Drawing.Point(11, 76);
+            this.lblTextStatus.MinimumSize = new System.Drawing.Size(200, 0);
             this.lblTextStatus.Name = "lblTextStatus";
-            this.lblTextStatus.Size = new System.Drawing.Size(132, 19);
+            this.lblTextStatus.Size = new System.Drawing.Size(200, 19);
             this.lblTextStatus.TabIndex = 3;
             this.lblTextStatus.Text = "Belum Terhubung";
             this.lblTextStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -347,8 +348,8 @@ namespace PR_Project
             // panel2
             // 
             this.panel2.Controls.Add(this.btn_connect);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.lbl_statusText);
+            this.panel2.Controls.Add(this.lbl_tellmenu);
             this.panel2.Controls.Add(this.pictbox_AlertIcon);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -356,56 +357,9 @@ namespace PR_Project
             this.panel2.Size = new System.Drawing.Size(805, 678);
             this.panel2.TabIndex = 6;
             // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Font = new System.Drawing.Font("Corbel", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
-            this.label2.Location = new System.Drawing.Point(292, 290);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(259, 39);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Belum Terhubung";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label3.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
-            this.label3.Location = new System.Drawing.Point(233, 329);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(443, 29);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Silahkan hubungkan Perangkat Fingerprint";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictbox_AlertIcon
-            // 
-            this.pictbox_AlertIcon.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictbox_AlertIcon.BackColor = System.Drawing.Color.Transparent;
-            this.pictbox_AlertIcon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
-            this.pictbox_AlertIcon.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
-            this.pictbox_AlertIcon.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
-            this.pictbox_AlertIcon.IconSize = 170;
-            this.pictbox_AlertIcon.Location = new System.Drawing.Point(317, 117);
-            this.pictbox_AlertIcon.Name = "pictbox_AlertIcon";
-            this.pictbox_AlertIcon.Size = new System.Drawing.Size(194, 170);
-            this.pictbox_AlertIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictbox_AlertIcon.TabIndex = 5;
-            this.pictbox_AlertIcon.TabStop = false;
-            // 
             // btn_connect
             // 
-            this.btn_connect.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_connect.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_connect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btn_connect.FlatAppearance.BorderSize = 0;
             this.btn_connect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -415,15 +369,60 @@ namespace PR_Project
             this.btn_connect.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btn_connect.IconColor = System.Drawing.Color.Black;
             this.btn_connect.IconSize = 16;
-            this.btn_connect.Location = new System.Drawing.Point(348, 386);
+            this.btn_connect.Location = new System.Drawing.Point(313, 413);
             this.btn_connect.Name = "btn_connect";
             this.btn_connect.Rotation = 0D;
-            this.btn_connect.Size = new System.Drawing.Size(163, 59);
-            this.btn_connect.TabIndex = 7;
+            this.btn_connect.Size = new System.Drawing.Size(163, 63);
+            this.btn_connect.TabIndex = 15;
             this.btn_connect.Text = "Hubungkan";
             this.btn_connect.UseVisualStyleBackColor = false;
+            this.btn_connect.Click += new System.EventHandler(this.btn_connect_Click);
             // 
-            // Form1
+            // lbl_statusText
+            // 
+            this.lbl_statusText.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_statusText.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_statusText.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbl_statusText.Font = new System.Drawing.Font("Corbel", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_statusText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
+            this.lbl_statusText.Location = new System.Drawing.Point(274, 295);
+            this.lbl_statusText.Name = "lbl_statusText";
+            this.lbl_statusText.Size = new System.Drawing.Size(259, 35);
+            this.lbl_statusText.TabIndex = 12;
+            this.lbl_statusText.Text = "Belum Terhubung";
+            this.lbl_statusText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl_tellmenu
+            // 
+            this.lbl_tellmenu.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_tellmenu.AutoSize = true;
+            this.lbl_tellmenu.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_tellmenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbl_tellmenu.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_tellmenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
+            this.lbl_tellmenu.Location = new System.Drawing.Point(184, 341);
+            this.lbl_tellmenu.Name = "lbl_tellmenu";
+            this.lbl_tellmenu.Size = new System.Drawing.Size(443, 29);
+            this.lbl_tellmenu.TabIndex = 14;
+            this.lbl_tellmenu.Text = "Silahkan hubungkan Perangkat Fingerprint";
+            this.lbl_tellmenu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictbox_AlertIcon
+            // 
+            this.pictbox_AlertIcon.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictbox_AlertIcon.BackColor = System.Drawing.Color.Transparent;
+            this.pictbox_AlertIcon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
+            this.pictbox_AlertIcon.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
+            this.pictbox_AlertIcon.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
+            this.pictbox_AlertIcon.IconSize = 194;
+            this.pictbox_AlertIcon.Location = new System.Drawing.Point(271, 48);
+            this.pictbox_AlertIcon.Name = "pictbox_AlertIcon";
+            this.pictbox_AlertIcon.Size = new System.Drawing.Size(194, 320);
+            this.pictbox_AlertIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictbox_AlertIcon.TabIndex = 13;
+            this.pictbox_AlertIcon.TabStop = false;
+            // 
+            // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -435,11 +434,12 @@ namespace PR_Project
             this.Controls.Add(this.panelMenu);
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(1024, 800);
-            this.Name = "Form1";
+            this.Name = "MainMenu";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.MainMenu_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelMenu.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -458,29 +458,28 @@ namespace PR_Project
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panelMenu;
-        private FontAwesome.Sharp.IconButton btn_overview;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private FontAwesome.Sharp.IconButton btn_setelan;
-        private FontAwesome.Sharp.IconButton btn_dtKaryawan;
-        private FontAwesome.Sharp.IconButton btn_laporan;
-        private FontAwesome.Sharp.IconButton btn_dtAbsensi;
         private System.Windows.Forms.Panel PanelChildFormHead;
         private System.Windows.Forms.Label lblChildForm;
         private FontAwesome.Sharp.IconPictureBox iconCurrentchildForm;
         private System.Windows.Forms.Label lblChildFormDefault;
-        private System.Windows.Forms.Panel panel1;
-        private FontAwesome.Sharp.IconPictureBox iconStatusPanel;
-        private System.Windows.Forms.Label lblTextStatus;
         private System.Windows.Forms.Panel panelChildShadow;
         private System.Windows.Forms.Panel panelChildFormContainer;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label3;
-        private FontAwesome.Sharp.IconPictureBox pictbox_AlertIcon;
-        private FontAwesome.Sharp.IconButton btn_connect;
+        public FontAwesome.Sharp.IconButton btn_overview;
+        public FontAwesome.Sharp.IconButton btn_setelan;
+        public FontAwesome.Sharp.IconButton btn_dtKaryawan;
+        public FontAwesome.Sharp.IconButton btn_laporan;
+        public FontAwesome.Sharp.IconButton btn_dtAbsensi;
+        public System.Windows.Forms.Panel panel2;
+        public System.Windows.Forms.Label lblTextStatus;
+        public System.Windows.Forms.Panel panelMenu;
+        public System.Windows.Forms.Panel panel1;
+        public FontAwesome.Sharp.IconPictureBox iconStatusPanel;
+        public FontAwesome.Sharp.IconButton btn_connect;
+        public FontAwesome.Sharp.IconPictureBox pictbox_AlertIcon;
+        public System.Windows.Forms.Label lbl_statusText;
+        public System.Windows.Forms.Label lbl_tellmenu;
     }
 }
 

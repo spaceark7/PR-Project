@@ -12,20 +12,26 @@ using PR_Project.Forms;
 
 namespace PR_Project
 {
-    public partial class Form1 : Form
+    public partial class MainMenu : Form
     {
 
         // This Field as Instance For Left Border HIghlight when button active or inactive
         private IconButton currentButton;
         private Panel leftBorderPanel;
         private Form currentChildForm;
-
-        public Form1()
+        public bool isDeviceConnected = false;
+        public string connection
+        {
+            get { return this.lblTextStatus.Text; } set { this.lblTextStatus.Text = value; }
+        }
+        public bool DeviceStatus { get { return isDeviceConnected; } set { isDeviceConnected = value; } }
+        public MainMenu()
         {
             InitializeComponent();
             leftBorderPanel = new Panel();
             leftBorderPanel.Size = new Size(10, 50);
             panelMenu.Controls.Add(leftBorderPanel);
+            
 
         }
 
@@ -99,35 +105,76 @@ namespace PR_Project
         private void btn_overview_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Color.FromArgb(255, 18, 140, 126));
-            OpenChildForm(new OverviewForm());
+            
+           
+
+            if (isDeviceConnected)
+            {
+                OpenChildForm(new OverviewForm());
+            }
+
 
         }
 
         private void btn_dtAbsensi_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Color.FromArgb(255, 18, 140, 126));
-            OpenChildForm(new DataAbsensi());
+            if (isDeviceConnected) {
+                OpenChildForm(new DataAbsensi());
+            }
+            
         }
 
         private void btn_laporan_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Color.FromArgb(255, 18, 140, 126));
-            OpenChildForm(new Laporan());
+            if (isDeviceConnected)
+            { OpenChildForm(new Laporan()); }
+                
         }
 
         private void btn_dtKaryawan_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Color.FromArgb(255, 18, 140, 126));
-            OpenChildForm(new DataKaryawan());
+            if (isDeviceConnected)
+            { OpenChildForm(new DataKaryawan()); }
+            
         }
 
         private void btn_setelan_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Color.FromArgb(255, 18, 140, 126));
-            OpenChildForm(new Setting());
+            if (isDeviceConnected)
+            { OpenChildForm(new Setting()); }
+            
         }
+
+
         #endregion
 
-       
+        private void MainMenu_Load(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void btn_connect_Click(object sender, EventArgs e)
+        {
+            isDeviceConnected = true;
+            if(isDeviceConnected)
+            {
+                this.lbl_statusText.Text = "Terhubung";
+                this.lblTextStatus.Text = "Terhubung";
+                this.pictbox_AlertIcon.IconChar = IconChar.CheckCircle;
+                this.pictbox_AlertIcon.IconColor = Color.Green;
+                this.iconStatusPanel.IconChar = IconChar.CheckCircle;
+                this.iconStatusPanel.IconColor = Color.LawnGreen;
+                btn_connect.Visible = false;
+                this.lbl_tellmenu.Text = "Silahkan Pilih Menu DIsamping Kiri";
+            }
+            else
+            {
+                MessageBox.Show("Terjadi Kesalahan!");
+            }
+        }
     }
 }
