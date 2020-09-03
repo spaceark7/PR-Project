@@ -20,7 +20,9 @@ namespace PR_Project.Forms
 
         private void DataAbsensi_Load(object sender, EventArgs e)
         {
-           
+            // TODO: This line of code loads data into the 'databaseDataSet.PresentData' table. You can move, or remove it, as needed.
+            this.presentDataTableAdapter.Fill(this.databaseDataSet.PresentData);
+
         }
     }
 }
