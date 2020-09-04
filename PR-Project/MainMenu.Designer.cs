@@ -52,6 +52,11 @@ namespace PR_Project
             this.lbl_statusText = new System.Windows.Forms.Label();
             this.lbl_tellmenu = new System.Windows.Forms.Label();
             this.pictbox_AlertIcon = new FontAwesome.Sharp.IconPictureBox();
+            this.panel_DeviceInfo = new System.Windows.Forms.Panel();
+            this.lbl_deviceNameText = new System.Windows.Forms.Label();
+            this.lbl_deviceNameVal = new System.Windows.Forms.Label();
+            this.lbl_deviceVersion = new System.Windows.Forms.Label();
+            this.lbl_deviceVersionVal = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconStatusPanel)).BeginInit();
@@ -61,12 +66,14 @@ namespace PR_Project
             this.panelChildFormContainer.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictbox_AlertIcon)).BeginInit();
+            this.panel_DeviceInfo.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.White;
             this.panelMenu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelMenu.Controls.Add(this.panel_DeviceInfo);
             this.panelMenu.Controls.Add(this.label1);
             this.panelMenu.Controls.Add(this.panel1);
             this.panelMenu.Controls.Add(this.btn_setelan);
@@ -422,6 +429,73 @@ namespace PR_Project
             this.pictbox_AlertIcon.TabIndex = 13;
             this.pictbox_AlertIcon.TabStop = false;
             // 
+            // panel_DeviceInfo
+            // 
+            this.panel_DeviceInfo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel_DeviceInfo.Controls.Add(this.lbl_deviceVersionVal);
+            this.panel_DeviceInfo.Controls.Add(this.lbl_deviceVersion);
+            this.panel_DeviceInfo.Controls.Add(this.lbl_deviceNameVal);
+            this.panel_DeviceInfo.Controls.Add(this.lbl_deviceNameText);
+            this.panel_DeviceInfo.Location = new System.Drawing.Point(11, 423);
+            this.panel_DeviceInfo.Name = "panel_DeviceInfo";
+            this.panel_DeviceInfo.Size = new System.Drawing.Size(192, 196);
+            this.panel_DeviceInfo.TabIndex = 8;
+            this.panel_DeviceInfo.Visible = false;
+            // 
+            // lbl_deviceNameText
+            // 
+            this.lbl_deviceNameText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_deviceNameText.AutoSize = true;
+            this.lbl_deviceNameText.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_deviceNameText.Font = new System.Drawing.Font("Corbel", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_deviceNameText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(103)))), ((int)(((byte)(178)))));
+            this.lbl_deviceNameText.Location = new System.Drawing.Point(39, 9);
+            this.lbl_deviceNameText.Name = "lbl_deviceNameText";
+            this.lbl_deviceNameText.Size = new System.Drawing.Size(108, 27);
+            this.lbl_deviceNameText.TabIndex = 0;
+            this.lbl_deviceNameText.Text = "Perangkat";
+            // 
+            // lbl_deviceNameVal
+            // 
+            this.lbl_deviceNameVal.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lbl_deviceNameVal.AutoSize = true;
+            this.lbl_deviceNameVal.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_deviceNameVal.Font = new System.Drawing.Font("Corbel", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_deviceNameVal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(103)))), ((int)(((byte)(178)))));
+            this.lbl_deviceNameVal.Location = new System.Drawing.Point(40, 45);
+            this.lbl_deviceNameVal.Name = "lbl_deviceNameVal";
+            this.lbl_deviceNameVal.Size = new System.Drawing.Size(16, 23);
+            this.lbl_deviceNameVal.TabIndex = 1;
+            this.lbl_deviceNameVal.Text = "-";
+            this.lbl_deviceNameVal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl_deviceVersion
+            // 
+            this.lbl_deviceVersion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_deviceVersion.AutoSize = true;
+            this.lbl_deviceVersion.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_deviceVersion.Font = new System.Drawing.Font("Corbel", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_deviceVersion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(103)))), ((int)(((byte)(178)))));
+            this.lbl_deviceVersion.Location = new System.Drawing.Point(62, 100);
+            this.lbl_deviceVersion.Name = "lbl_deviceVersion";
+            this.lbl_deviceVersion.Size = new System.Drawing.Size(58, 27);
+            this.lbl_deviceVersion.TabIndex = 2;
+            this.lbl_deviceVersion.Text = "Versi";
+            // 
+            // lbl_deviceVersionVal
+            // 
+            this.lbl_deviceVersionVal.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lbl_deviceVersionVal.AutoSize = true;
+            this.lbl_deviceVersionVal.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_deviceVersionVal.Font = new System.Drawing.Font("Corbel", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_deviceVersionVal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(103)))), ((int)(((byte)(178)))));
+            this.lbl_deviceVersionVal.Location = new System.Drawing.Point(40, 143);
+            this.lbl_deviceVersionVal.Name = "lbl_deviceVersionVal";
+            this.lbl_deviceVersionVal.Size = new System.Drawing.Size(16, 23);
+            this.lbl_deviceVersionVal.TabIndex = 3;
+            this.lbl_deviceVersionVal.Text = "-";
+            this.lbl_deviceVersionVal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -453,6 +527,8 @@ namespace PR_Project
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictbox_AlertIcon)).EndInit();
+            this.panel_DeviceInfo.ResumeLayout(false);
+            this.panel_DeviceInfo.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -480,6 +556,11 @@ namespace PR_Project
         public FontAwesome.Sharp.IconPictureBox pictbox_AlertIcon;
         public System.Windows.Forms.Label lbl_statusText;
         public System.Windows.Forms.Label lbl_tellmenu;
+        private System.Windows.Forms.Label lbl_deviceVersionVal;
+        private System.Windows.Forms.Label lbl_deviceVersion;
+        private System.Windows.Forms.Label lbl_deviceNameVal;
+        private System.Windows.Forms.Label lbl_deviceNameText;
+        public System.Windows.Forms.Panel panel_DeviceInfo;
     }
 }
 

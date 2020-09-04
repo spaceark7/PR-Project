@@ -170,6 +170,9 @@ namespace PR_Project
                 this.iconStatusPanel.IconColor = Color.LawnGreen;
                 btn_connect.Visible = false;
                 this.lbl_tellmenu.Text = "Silahkan Pilih Menu DIsamping Kiri";
+                this.lbl_deviceNameVal.Text = "X107";
+                this.lbl_deviceVersionVal.Text = "XXX.XXX.XXX";
+                this.panel_DeviceInfo.Visible = true;
             }
             else
             {
