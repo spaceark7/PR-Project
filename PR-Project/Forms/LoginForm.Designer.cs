@@ -29,18 +29,19 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.iconPictureBox_LoginLogo = new FontAwesome.Sharp.IconPictureBox();
-            this.lbl_logoText = new System.Windows.Forms.Label();
-            this.lbl_LogoName = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.lbl_LogoName = new System.Windows.Forms.Label();
+            this.lbl_logoText = new System.Windows.Forms.Label();
+            this.iconPictureBox_LoginLogo = new FontAwesome.Sharp.IconPictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox_LoginLogo)).BeginInit();
             this.SuspendLayout();
@@ -58,20 +59,33 @@
             this.panel1.Size = new System.Drawing.Size(237, 387);
             this.panel1.TabIndex = 0;
             // 
-            // iconPictureBox_LoginLogo
+            // label1
             // 
-            this.iconPictureBox_LoginLogo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.iconPictureBox_LoginLogo.BackColor = System.Drawing.Color.Transparent;
-            this.iconPictureBox_LoginLogo.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.iconPictureBox_LoginLogo.IconChar = FontAwesome.Sharp.IconChar.Building;
-            this.iconPictureBox_LoginLogo.IconColor = System.Drawing.SystemColors.HotTrack;
-            this.iconPictureBox_LoginLogo.IconSize = 104;
-            this.iconPictureBox_LoginLogo.Location = new System.Drawing.Point(62, 49);
-            this.iconPictureBox_LoginLogo.Name = "iconPictureBox_LoginLogo";
-            this.iconPictureBox_LoginLogo.Size = new System.Drawing.Size(104, 152);
-            this.iconPictureBox_LoginLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.iconPictureBox_LoginLogo.TabIndex = 0;
-            this.iconPictureBox_LoginLogo.TabStop = false;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label1.Location = new System.Drawing.Point(24, 307);
+            this.label1.MinimumSize = new System.Drawing.Size(200, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(200, 19);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Deskripsi/Alamat";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl_LogoName
+            // 
+            this.lbl_LogoName.AutoSize = true;
+            this.lbl_LogoName.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_LogoName.Font = new System.Drawing.Font("Corbel", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_LogoName.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lbl_LogoName.Location = new System.Drawing.Point(39, 224);
+            this.lbl_LogoName.MinimumSize = new System.Drawing.Size(150, 0);
+            this.lbl_LogoName.Name = "lbl_LogoName";
+            this.lbl_LogoName.Size = new System.Drawing.Size(174, 27);
+            this.lbl_LogoName.TabIndex = 1;
+            this.lbl_LogoName.Text = "Logo Perusahaan";
+            this.lbl_LogoName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbl_logoText
             // 
@@ -87,33 +101,20 @@
             this.lbl_logoText.Text = "Nama Perusahaan";
             this.lbl_logoText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lbl_LogoName
+            // iconPictureBox_LoginLogo
             // 
-            this.lbl_LogoName.AutoSize = true;
-            this.lbl_LogoName.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_LogoName.Font = new System.Drawing.Font("Corbel", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_LogoName.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lbl_LogoName.Location = new System.Drawing.Point(39, 224);
-            this.lbl_LogoName.MinimumSize = new System.Drawing.Size(150, 0);
-            this.lbl_LogoName.Name = "lbl_LogoName";
-            this.lbl_LogoName.Size = new System.Drawing.Size(174, 27);
-            this.lbl_LogoName.TabIndex = 2;
-            this.lbl_LogoName.Text = "Logo Perusahaan";
-            this.lbl_LogoName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label1.Location = new System.Drawing.Point(24, 307);
-            this.label1.MinimumSize = new System.Drawing.Size(200, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(200, 19);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Deskripsi/Alamat";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.iconPictureBox_LoginLogo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.iconPictureBox_LoginLogo.BackColor = System.Drawing.Color.Transparent;
+            this.iconPictureBox_LoginLogo.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.iconPictureBox_LoginLogo.IconChar = FontAwesome.Sharp.IconChar.Building;
+            this.iconPictureBox_LoginLogo.IconColor = System.Drawing.SystemColors.HotTrack;
+            this.iconPictureBox_LoginLogo.IconSize = 104;
+            this.iconPictureBox_LoginLogo.Location = new System.Drawing.Point(62, 49);
+            this.iconPictureBox_LoginLogo.Name = "iconPictureBox_LoginLogo";
+            this.iconPictureBox_LoginLogo.Size = new System.Drawing.Size(104, 152);
+            this.iconPictureBox_LoginLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.iconPictureBox_LoginLogo.TabIndex = 0;
+            this.iconPictureBox_LoginLogo.TabStop = false;
             // 
             // label2
             // 
@@ -156,6 +157,8 @@
             this.textBox1.Size = new System.Drawing.Size(333, 23);
             this.textBox1.TabIndex = 6;
             this.textBox1.Text = "Username";
+            this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter);
+            this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
             // 
             // textBox2
             // 
@@ -170,6 +173,8 @@
             this.textBox2.Size = new System.Drawing.Size(333, 23);
             this.textBox2.TabIndex = 8;
             this.textBox2.Text = "Password";
+            this.textBox2.Enter += new System.EventHandler(this.textBox2_Enter);
+            this.textBox2.Leave += new System.EventHandler(this.textBox2_Leave);
             // 
             // iconButton1
             // 
@@ -191,6 +196,7 @@
             this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // shapeContainer1
             // 
@@ -204,16 +210,6 @@
             this.shapeContainer1.TabIndex = 11;
             this.shapeContainer1.TabStop = false;
             // 
-            // lineShape1
-            // 
-            this.lineShape1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lineShape1.BorderColor = System.Drawing.SystemColors.Window;
-            this.lineShape1.Name = "lineShape1";
-            this.lineShape1.X1 = 269;
-            this.lineShape1.X2 = 605;
-            this.lineShape1.Y1 = 166;
-            this.lineShape1.Y2 = 166;
-            // 
             // lineShape2
             // 
             this.lineShape2.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -224,12 +220,37 @@
             this.lineShape2.Y1 = 224;
             this.lineShape2.Y2 = 224;
             // 
+            // lineShape1
+            // 
+            this.lineShape1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lineShape1.BorderColor = System.Drawing.SystemColors.Window;
+            this.lineShape1.Name = "lineShape1";
+            this.lineShape1.X1 = 269;
+            this.lineShape1.X2 = 605;
+            this.lineShape1.Y1 = 166;
+            this.lineShape1.Y2 = 166;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label4.Font = new System.Drawing.Font("Corbel", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.label4.ForeColor = System.Drawing.SystemColors.Window;
+            this.label4.Location = new System.Drawing.Point(609, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(57, 23);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Tutup";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(103)))), ((int)(((byte)(178)))));
             this.ClientSize = new System.Drawing.Size(678, 387);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.iconButton1);
             this.Controls.Add(this.textBox2);
@@ -239,7 +260,7 @@
             this.Controls.Add(this.shapeContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoginForm";
-            this.Opacity = 0.88D;
+            this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginForm";
             this.panel1.ResumeLayout(false);
@@ -265,5 +286,6 @@
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape2;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
+        private System.Windows.Forms.Label label4;
     }
 }
